@@ -1,16 +1,47 @@
-﻿// Your code here!
-window.onload = function ()
+﻿window.onload = function ()
 {
-    
     document.getElementById("Add").onclick = function (_evt)
     {
-        Addition(nx, ny)
+        Addition(x, y);
+    }
+    document.getElementById("Subtract").onclick = function (_evt)
+    {
+        Subtraction(x, y);
+    }
+    document.getElementById("Multiply").onclick = function (_evt)
+    {
+        Multiplication(x, y);
+    }
+    document.getElementById("Divide").onclick = function (_evt)
+    {
+        Division(x, y);
     }
 }
 
 function Addition(a, b)
 {
     var c = a + b;
+    var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
+    messageDialog.showAsync();
+}
+
+function Subtraction(a, b)
+{
+    var c = a - b;
+    var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
+    messageDialog.showAsync();
+}
+
+function Multiplication(a, b)
+{
+    var c = a * b;
+    var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
+    messageDialog.showAsync();
+}
+
+function Division(a, b)
+{
+    var c = a / b;
     var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
     messageDialog.showAsync();
 }
