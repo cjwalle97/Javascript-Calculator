@@ -1,5 +1,9 @@
 ﻿window.onload = function ()
 {
+    var x = document.getElementById("N1");
+
+    var y = document.getElementById("N2");
+
     document.getElementById("Add").onclick = function (_evt)
     {
         Addition(x, y);
