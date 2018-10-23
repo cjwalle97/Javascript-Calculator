@@ -6,19 +6,27 @@
 
     document.getElementById("Add").onclick = function (_evt)
     {
-        Addition(x, y);
+        var nx = 3;
+        var ny = 2;
+        Addition(nx, ny);
     }
     document.getElementById("Subtract").onclick = function (_evt)
     {
-        Subtraction(x, y);
+        var nx = 8;
+        var ny = 3;
+        Subtraction(nx, ny);
     }
     document.getElementById("Multiply").onclick = function (_evt)
     {
-        Multiplication(x, y);
+        var nx = 1;
+        var ny = 5;
+        Multiplication(nx, ny);
     }
     document.getElementById("Divide").onclick = function (_evt)
     {
-        Division(x, y);
+        var nx = 10;
+        var ny = 2;
+        Division(nx, ny);
     }
 }
 
