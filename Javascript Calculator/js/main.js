@@ -1,31 +1,29 @@
 ﻿window.onload = function ()
 {
     var x = document.getElementById("N1");
-
     var y = document.getElementById("N2");
-
+    
     document.getElementById("Add").onclick = function (_evt)
     {
-        var nx = 3;
-        var ny = 2;
+
         Addition(nx, ny);
     }
     document.getElementById("Subtract").onclick = function (_evt)
     {
-        var nx = 8;
-        var ny = 3;
+        var nx = parseFloat(x.nodeValue);
+        var ny = parseFloat(y.nodeValue);
         Subtraction(nx, ny);
     }
     document.getElementById("Multiply").onclick = function (_evt)
     {
-        var nx = 1;
-        var ny = 5;
+        var nx = parseFloat(x.nodeValue);
+        var ny = parseFloat(y.nodeValue);
         Multiplication(nx, ny);
     }
     document.getElementById("Divide").onclick = function (_evt)
     {
-        var nx = 10;
-        var ny = 2;
+        var nx = parseFloat(x.nodeValue);
+        var ny = parseFloat(y.nodeValue);
         Division(nx, ny);
     }
 }
