@@ -1,34 +1,38 @@
 ﻿window.onload = function ()
 {
-    var x = document.getElementById("N1").value;
-    var y = document.getElementById("N2").value;
-    
     document.getElementById("Add").onclick = function (_evt)
     {
-        nx = parseInt(x);
-        ny = parseInt(y);
-        Addition(nx, ny);
+        var x = window.prompt("Number1:", "0");
+        var y = window.prompt("Number2:", "0");
+        /*additionwindow.onload = function () {
+            var Number1 = document.createAttribute("TEXT");
+            var Number2 = document.createAttribute("TEXT");
+            
+        }*/
     }
 
     document.getElementById("Subtract").onclick = function (_evt)
     {
-        nx = parseInt(x);
-        ny = parseInt(y);
-        Subtraction(nx, ny);
+        var subtractionwindow = new window()
+        subtractionwindow.onload = function () {
+
+        }
     }
 
     document.getElementById("Multiply").onclick = function (_evt)
     {
-        nx = parseInt(x);
-        ny = parseInt(y);
-        Multiplication(nx, ny);
+        var multiplicationwindow = new window()
+        multiplicationwindow.onload = function () {
+
+        }
     }
 
     document.getElementById("Divide").onclick = function (_evt)
     {
-        nx = parseInt(x);
-        ny = parseInt(y);
-        Division(nx, ny);
+        var divisionwindow = new window()
+        divisionwindow.onload = function () {
+
+        }
     }
 }
 
