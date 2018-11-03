@@ -4,35 +4,24 @@
     {
         var x = window.prompt("Number1:", "0");
         var y = window.prompt("Number2:", "0");
-        /*additionwindow.onload = function () {
-            var Number1 = document.createAttribute("TEXT");
-            var Number2 = document.createAttribute("TEXT");
-            
-        }*/
     }
 
     document.getElementById("Subtract").onclick = function (_evt)
     {
-        var subtractionwindow = new window()
-        subtractionwindow.onload = function () {
-
-        }
+        var x = prompt("Number1:", "0");
+        var y = prompt("Number2:", "0");
     }
 
     document.getElementById("Multiply").onclick = function (_evt)
     {
-        var multiplicationwindow = new window()
-        multiplicationwindow.onload = function () {
-
-        }
+        var x = window.prompt("Number1:", "0");
+        var y = window.prompt("Number2:", "0");
     }
 
     document.getElementById("Divide").onclick = function (_evt)
     {
-        var divisionwindow = new window()
-        divisionwindow.onload = function () {
-
-        }
+        var x = window.prompt("Number1:", "0");
+        var y = window.prompt("Number2:", "0");
     }
 }
 
