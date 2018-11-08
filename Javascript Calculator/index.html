@@ -17,7 +17,11 @@
         {
             document.getElementById("Add").onclick = function (_evt)
             {
-                var promptwindow = new Windows.Ui.Popups.
+                var promptwindow = new Window();
+                promptwindow.onload = function (_evt)
+                {
+
+                }
             }
 
             document.getElementById("Subtract").onclick = function (_evt)
@@ -36,28 +40,33 @@
             }
         }
 
-        function Addition(a, b) {
+        function Addition(a, b)
+        {
             var c = a + b;
             var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
             messageDialog.showAsync();
         }
 
-        function Subtraction(a, b) {
+        function Subtraction(a, b)
+        {
             var c = a - b;
             var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
             messageDialog.showAsync();
         }
 
-        function Multiplication(a, b) {
+        function Multiplication(a, b)
+        {
             var c = a * b;
             var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
             messageDialog.showAsync();
         }
 
-        function Division(a, b) {
+        function Division(a, b)
+        {
             var c = a / b;
             var messageDialog = new Windows.UI.Popups.MessageDialog("Here is your result ", c);
             messageDialog.showAsync();
+        }
     </script>
 </body>
 </html>
