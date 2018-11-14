@@ -19,7 +19,15 @@
         {
             document.getElementById("Add").onclick = function (_evt)
             {
-                
+                var number1 = prompt("Number 1", "0");
+                var number2 = prompt("Number 2", "0");
+                if (number1.valueOf == null) {
+                    var promptdialogue = new Windows.UI.Popups.MessageDialog("Prompt not working", a);
+                }
+                if (number2.valueOf == null) {
+                    var promptdialogue = new Windows.UI.Popups.MessageDialog("Prompt now working", b);
+                }
+
             }
 
             document.getElementById("Subtract").onclick = function (_evt)
